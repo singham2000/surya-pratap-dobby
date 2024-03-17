@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(Boolean(token));
 
   const signIn = (formData) => {
-    fetch("http://localhost:4000/api/user/signin", {
+    fetch("https://dobby-back.adaptable.app/api/user/signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

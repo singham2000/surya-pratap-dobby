@@ -46,8 +46,8 @@ const Home = () => {
     if (textValue) {
       const storageRef = ref(storage, `${id}/${textValue}`);
       setIsLoading(true);
-
-      fetch("http://localhost:4000/api/user/upload", {
+      
+      fetch("https://dobby-back.adaptable.app/api/user/upload", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

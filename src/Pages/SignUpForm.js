@@ -19,7 +19,7 @@ const SignUpForm = () => {
   };
 
   const handlerSignup = () => {
-    fetch("http://localhost:4000/api/user/signup", {
+    fetch("https://dobby-back.adaptable.app/api/user/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
